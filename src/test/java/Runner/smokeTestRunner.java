@@ -11,6 +11,7 @@ import org.junit.runner.RunWith;
         features = {"src/test/resources"},
         glue = {"stepDefinition"},
         dryRun = false
+
 )
 
 public class smokeTestRunner {
