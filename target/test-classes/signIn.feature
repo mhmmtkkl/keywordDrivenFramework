@@ -13,7 +13,9 @@
       And I am as a user click on element in "login" page
       |loginButton|
 
-
+      And I am as a user click on element in "HomePage" page
+      |serviceDropdown|
+      |ticketInDropdown|
 
 
 
