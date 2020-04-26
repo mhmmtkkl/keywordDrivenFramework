@@ -27,9 +27,4 @@ public class smokeTestRunner {
         Disadvantage:
             Some companies BA or PO is writing feature files.
 
-
-
-
-
-
     */
