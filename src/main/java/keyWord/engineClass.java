@@ -1,5 +1,6 @@
 package keyWord;
 
+import org.apache.log4j.Logger;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -16,12 +17,15 @@ import java.io.IOException;
 import java.sql.Time;
 import java.util.concurrent.TimeUnit;
 
+
 public class engineClass {
 
     public WebDriver driver;
 
     Driver d1 = new Driver();
     ReadProperty rp1 = new ReadProperty();
+
+    Logger logger = Logger.getLogger(engineClass.class);
 
     String elementFilePath = "C:\\Users\\JuNiOr\\IdeaProjects\\KeywordDrivernWithClassApril25\\src\\main\\java\\AllElements\\keywordDriverLocators.xlsx";
 
@@ -91,11 +95,15 @@ public class engineClass {
 
         WebElement sendkeyElement = findingElementMethod(sheetName , elementName);
 
+        logger.info("I am typing in the " + elementName + " value is " + value);
+
         sendkeyElement.sendKeys(value);
 
     }
 
     public void clickFunctionality(String ElementName , String sheetName){
+
+        logger.debug("I am clicking on the " + ElementName );
 
         WebElement clickElement = findingElementMethod(sheetName , ElementName);
 

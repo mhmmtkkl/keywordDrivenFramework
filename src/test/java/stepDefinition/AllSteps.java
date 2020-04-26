@@ -19,15 +19,15 @@ public class AllSteps {
     }
 
     @Given("^I am as a user entering field in \"([^\"]*)\" page$")
-    public void i_am_as_a_user_entering_field_in_page(String sheetName, DataTable allData) {
+            public void i_am_as_a_user_entering_field_in_page(String sheetName, DataTable allData) {
 
-        List<List<String>> valuesAndElementnames = allData.raw();
+                List<List<String>> valuesAndElementnames = allData.raw();
 
-        for(int i = 0 ; i < valuesAndElementnames.size() ; i++){
+                for(int i = 0 ; i < valuesAndElementnames.size() ; i++){
 
-            String elementName = valuesAndElementnames.get(i).get(0);
+                    String elementName = valuesAndElementnames.get(i).get(0);
 
-            String value = valuesAndElementnames.get(i).get(1);
+                    String value = valuesAndElementnames.get(i).get(1);
 
             System.out.println(elementName);
             System.out.println(value);

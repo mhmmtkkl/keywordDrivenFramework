@@ -17,3 +17,19 @@ import org.junit.runner.RunWith;
 public class smokeTestRunner {
 
 }
+
+    /*
+        I am able to create one framework which is keyword driven framework with bdd.
+
+        Log4J I can implement log4j in my framework it will give me report for each step which I do in the framework
+
+
+        Disadvantage:
+            Some companies BA or PO is writing feature files.
+
+
+
+
+
+
+    */
